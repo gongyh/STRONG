@@ -1,8 +1,17 @@
 FROM mambaorg/micromamba:2.2.0
 
 USER root
+# copy source code
+COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
 
-# install system dependencies
+USER $MAMBA_USER
+# install conda env
+RUN sed -i 's/name: STRONG/name: base/g' /opt/STRONG/conda_env.yaml && \
+    micromamba install --yes --file /opt/STRONG/conda_env.yaml && \
+    micromamba clean --all --yes
+
+USER root
+# install system dependencies for spades
 RUN apt-get update && apt-get install -y --no-install-recommends \
       cmake \
       build-essential \
@@ -12,17 +21,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       libbz2-dev \
     && rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log
 
-# copy source code
-COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
-
 USER $MAMBA_USER
 
 # install SPAdes
 RUN cd /opt/STRONG/SPAdes/assembler && ./build_cog_tools.sh
-
-# install conda env
-RUN micromamba install --yes --name base --file /opt/STRONG/conda_env.yaml && \
-    micromamba clean --all --yes
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
