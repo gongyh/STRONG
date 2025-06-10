@@ -4,117 +4,117 @@ install.log
 Dockerfile
 
 # From BayesPaths/.gitignore
-BayesPaths/**/__pycache__
-BayesPaths/**/*.pyc
-BayesPaths/**/*.pyo
+BayesPaths/__pycache__
+BayesPaths/*.pyc
+BayesPaths/*.pyo
 
 # From DESMAN/.gitignore
-DESMAN/**/*.egg-info
-DESMAN/**/*.pyc
-DESMAN/**/__pycache__
-DESMAN/**/*.so
+DESMAN/*.egg-info
+DESMAN/*.pyc
+DESMAN/__pycache__
+DESMAN/*.so
 
 # From SnakeNest/.gitignore
-SnakeNest/**/__pycache__
-SnakeNest/**/*.pyc
-SnakeNest/**/*.pyo
+SnakeNest/__pycache__
+SnakeNest/*.pyc
+SnakeNest/*.pyo
 
 # From SPAdes/.gitignore
-SPAdes/**/.settings
-SPAdes/**/.metadata/*
-SPAdes/**/.idea
-SPAdes/**/stats/*
-SPAdes/**/RemoteSystemsTempFiles/*
-SPAdes/**/~*
-SPAdes/**/*~
-SPAdes/**/*.exe
-SPAdes/**/*.exe.stackdump
-SPAdes/**/gmon.out
-SPAdes/**/CMakeFiles
-SPAdes/**/CMakeCache.txt
-SPAdes/**/cmake_install.cmake
-SPAdes/**/assembler/src/tools/quality/results*
+SPAdes/.settings
+SPAdes/.metadata/*
+SPAdes/.idea
+SPAdes/stats/*
+SPAdes/RemoteSystemsTempFiles/*
+SPAdes/~*
+SPAdes/*~
+SPAdes/*.exe
+SPAdes/*.exe.stackdump
+SPAdes/gmon.out
+SPAdes/CMakeFiles
+SPAdes/CMakeCache.txt
+SPAdes/cmake_install.cmake
+SPAdes/assembler/src/tools/quality/results*
 
 # From SPAdes/assembler/.gitignore
-SPAdes/assembler/**/bin/
-SPAdes/assembler/**/build/
-SPAdes/assembler/**/build_spades/
-SPAdes/assembler/**/logs/
-SPAdes/assembler/**/output/
-SPAdes/assembler/**/spades_output/
-SPAdes/assembler/**/spades_test/
-SPAdes/assembler/**/spades_test_truspades/
-SPAdes/assembler/**/teamcity_precompiled/
-SPAdes/assembler/**/CMakeFiles/
-SPAdes/assembler/**/scripts/
-SPAdes/assembler/**/share/
-SPAdes/assembler/**/*.launch
-SPAdes/assembler/**/*.ebwt
-SPAdes/assembler/**/*.pyc
-SPAdes/assembler/**/*.pyo
-SPAdes/assembler/**/*.class
-SPAdes/assembler/**/tags
-SPAdes/assembler/**/.DS_Store
-SPAdes/assembler/**/._.DS_Store
-SPAdes/assembler/**/spades_config.info
-SPAdes/assembler/**/bh_config.info
-SPAdes/assembler/**/bin
-SPAdes/assembler/**/build_spades
-SPAdes/assembler/**/share
+SPAdes/assembler/bin/
+SPAdes/assembler/build/
+SPAdes/assembler/build_spades/
+SPAdes/assembler/logs/
+SPAdes/assembler/output/
+SPAdes/assembler/spades_output/
+SPAdes/assembler/spades_test/
+SPAdes/assembler/spades_test_truspades/
+SPAdes/assembler/teamcity_precompiled/
+SPAdes/assembler/CMakeFiles/
+SPAdes/assembler/scripts/
+SPAdes/assembler/share/
+SPAdes/assembler/*.launch
+SPAdes/assembler/*.ebwt
+SPAdes/assembler/*.pyc
+SPAdes/assembler/*.pyo
+SPAdes/assembler/*.class
+SPAdes/assembler/tags
+SPAdes/assembler/.DS_Store
+SPAdes/assembler/._.DS_Store
+SPAdes/assembler/spades_config.info
+SPAdes/assembler/bh_config.info
+SPAdes/assembler/bin
+SPAdes/assembler/build_spades
+SPAdes/assembler/share
 
 # From SPAdes/assembler/configs/.gitignore
-SPAdes/assembler/configs/**/debruijn/config.info
-SPAdes/assembler/configs/**/debruijn/simplification.info
-SPAdes/assembler/configs/**/debruijn/distance_estimation.info
-SPAdes/assembler/configs/**/debruijn/detail_info_printer.info
-SPAdes/assembler/configs/**/debruijn/log.properties
-SPAdes/assembler/configs/**/debruijn/path_extend/pe_config.info
-SPAdes/assembler/configs/**/debruijn/path_extend/pe_params.info
-SPAdes/assembler/configs/**/debruijn/path_extend/pe_libs.info
-SPAdes/assembler/configs/**/debruijn/construction.info
-SPAdes/assembler/configs/**/hammer/config.info
-SPAdes/assembler/configs/**/_generic/
+SPAdes/assembler/configs/debruijn/config.info
+SPAdes/assembler/configs/debruijn/simplification.info
+SPAdes/assembler/configs/debruijn/distance_estimation.info
+SPAdes/assembler/configs/debruijn/detail_info_printer.info
+SPAdes/assembler/configs/debruijn/log.properties
+SPAdes/assembler/configs/debruijn/path_extend/pe_config.info
+SPAdes/assembler/configs/debruijn/path_extend/pe_params.info
+SPAdes/assembler/configs/debruijn/path_extend/pe_libs.info
+SPAdes/assembler/configs/debruijn/construction.info
+SPAdes/assembler/configs/hammer/config.info
+SPAdes/assembler/configs/_generic/
 
 # From SPAdes/assembler/ext/include/samtools/.gitignore
-SPAdes/assembler/ext/include/samtools/**/*.o
-SPAdes/assembler/ext/include/samtools/**/.*.swp
-SPAdes/assembler/ext/include/samtools/**/*.a
-SPAdes/assembler/ext/include/samtools/**/*.dSYM
+SPAdes/assembler/ext/include/samtools/*.o
+SPAdes/assembler/ext/include/samtools/.*.swp
+SPAdes/assembler/ext/include/samtools/*.a
+SPAdes/assembler/ext/include/samtools/*.dSYM
 
 # From SPAdes/assembler/ext/src/.gitignore
-SPAdes/assembler/ext/src/**/statgen/lib/samtools/*.o
-SPAdes/assembler/ext/src/**/statgen/lib/samtools/samtools
-SPAdes/assembler/ext/src/**/statgen/lib/tclap
-SPAdes/assembler/ext/src/**/statgen/lib/tclap-1.2.0/
-SPAdes/assembler/ext/src/**/statgen/lib/include/*.h
-SPAdes/assembler/ext/src/**/statgen/lib/samtools/libbam.a
-SPAdes/assembler/ext/src/**/statgen/lib/bam/obj/
-SPAdes/assembler/ext/src/**/statgen/lib/fastq/obj/
-SPAdes/assembler/ext/src/**/statgen/lib/general/obj/*.o
-SPAdes/assembler/ext/src/**/statgen/lib/glf/obj/
-SPAdes/assembler/ext/src/**/statgen/lib/libStatGen.a
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/Makefile
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/config.log
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/config.status
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/io_lib-config
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/io_lib_config.h
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/io_lib/.deps/
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/io_lib/Makefile
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/io_lib/os.h
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/libtool
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/progs/.deps/
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/progs/Makefile
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/stamp-h1
-SPAdes/assembler/ext/src/**/io_lib-1.12.5/tests/Makefile
+SPAdes/assembler/ext/src/statgen/lib/samtools/*.o
+SPAdes/assembler/ext/src/statgen/lib/samtools/samtools
+SPAdes/assembler/ext/src/statgen/lib/tclap
+SPAdes/assembler/ext/src/statgen/lib/tclap-1.2.0/
+SPAdes/assembler/ext/src/statgen/lib/include/*.h
+SPAdes/assembler/ext/src/statgen/lib/samtools/libbam.a
+SPAdes/assembler/ext/src/statgen/lib/bam/obj/
+SPAdes/assembler/ext/src/statgen/lib/fastq/obj/
+SPAdes/assembler/ext/src/statgen/lib/general/obj/*.o
+SPAdes/assembler/ext/src/statgen/lib/glf/obj/
+SPAdes/assembler/ext/src/statgen/lib/libStatGen.a
+SPAdes/assembler/ext/src/io_lib-1.12.5/Makefile
+SPAdes/assembler/ext/src/io_lib-1.12.5/config.log
+SPAdes/assembler/ext/src/io_lib-1.12.5/config.status
+SPAdes/assembler/ext/src/io_lib-1.12.5/io_lib-config
+SPAdes/assembler/ext/src/io_lib-1.12.5/io_lib_config.h
+SPAdes/assembler/ext/src/io_lib-1.12.5/io_lib/.deps/
+SPAdes/assembler/ext/src/io_lib-1.12.5/io_lib/Makefile
+SPAdes/assembler/ext/src/io_lib-1.12.5/io_lib/os.h
+SPAdes/assembler/ext/src/io_lib-1.12.5/libtool
+SPAdes/assembler/ext/src/io_lib-1.12.5/progs/.deps/
+SPAdes/assembler/ext/src/io_lib-1.12.5/progs/Makefile
+SPAdes/assembler/ext/src/io_lib-1.12.5/stamp-h1
+SPAdes/assembler/ext/src/io_lib-1.12.5/tests/Makefile
 
 # From SPAdes/assembler/ext/src/bwa/.gitignore
-SPAdes/assembler/ext/src/bwa/**/*.[oa]
-SPAdes/assembler/ext/src/bwa/**/bwa
-SPAdes/assembler/ext/src/bwa/**/test
-SPAdes/assembler/ext/src/bwa/**/test64
-SPAdes/assembler/ext/src/bwa/**/.*.swp
-SPAdes/assembler/ext/src/bwa/**/Makefile.bak
-SPAdes/assembler/ext/src/bwa/**/bwamem-lite
+SPAdes/assembler/ext/src/bwa/*.[oa]
+SPAdes/assembler/ext/src/bwa/bwa
+SPAdes/assembler/ext/src/bwa/test
+SPAdes/assembler/ext/src/bwa/test64
+SPAdes/assembler/ext/src/bwa/.*.swp
+SPAdes/assembler/ext/src/bwa/Makefile.bak
+SPAdes/assembler/ext/src/bwa/bwamem-lite
 
 # From SPAdes/assembler/ext/src/jemalloc/.gitignore
 SPAdes/assembler/ext/src/jemalloc/bin/jemalloc-config
@@ -168,8 +168,8 @@ SPAdes/assembler/ext/src/jemalloc/src/*.sym
 SPAdes/assembler/ext/src/jemalloc/run_tests.out/
 
 SPAdes/assembler/ext/src/jemalloc/test/test.sh
-SPAdes/assembler/ext/src/jemalloc/**/test/include/test/jemalloc_test.h
-SPAdes/assembler/ext/src/jemalloc/**/test/include/test/jemalloc_test_defs.h
+SPAdes/assembler/ext/src/jemalloc/test/include/test/jemalloc_test.h
+SPAdes/assembler/ext/src/jemalloc/test/include/test/jemalloc_test_defs.h
 
 SPAdes/assembler/ext/src/jemalloc/test/integration/[A-Za-z]*
 !SPAdes/assembler/ext/src/jemalloc/test/integration/[A-Za-z]*.*
@@ -195,17 +195,17 @@ SPAdes/assembler/ext/src/jemalloc/test/unit/*.out
 
 SPAdes/assembler/ext/src/jemalloc/VERSION
 
-SPAdes/assembler/ext/src/jemalloc/**/*.pdb
-SPAdes/assembler/ext/src/jemalloc/**/*.sdf
-SPAdes/assembler/ext/src/jemalloc/**/*.opendb
-SPAdes/assembler/ext/src/jemalloc/**/*.VC.db
-SPAdes/assembler/ext/src/jemalloc/**/*.opensdf
-SPAdes/assembler/ext/src/jemalloc/**/*.cachefile
-SPAdes/assembler/ext/src/jemalloc/**/*.suo
-SPAdes/assembler/ext/src/jemalloc/**/*.user
-SPAdes/assembler/ext/src/jemalloc/**/*.sln.docstates
-SPAdes/assembler/ext/src/jemalloc/**/*.tmp
-SPAdes/assembler/ext/src/jemalloc/**/.vs/
+SPAdes/assembler/ext/src/jemalloc/*.pdb
+SPAdes/assembler/ext/src/jemalloc/*.sdf
+SPAdes/assembler/ext/src/jemalloc/*.opendb
+SPAdes/assembler/ext/src/jemalloc/*.VC.db
+SPAdes/assembler/ext/src/jemalloc/*.opensdf
+SPAdes/assembler/ext/src/jemalloc/*.cachefile
+SPAdes/assembler/ext/src/jemalloc/*.suo
+SPAdes/assembler/ext/src/jemalloc/*.user
+SPAdes/assembler/ext/src/jemalloc/*.sln.docstates
+SPAdes/assembler/ext/src/jemalloc/*.tmp
+SPAdes/assembler/ext/src/jemalloc/.vs/
 SPAdes/assembler/ext/src/jemalloc/msvc/Win32/
 SPAdes/assembler/ext/src/jemalloc/msvc/x64/
 SPAdes/assembler/ext/src/jemalloc/msvc/projects/*/*/Debug*/
@@ -213,59 +213,59 @@ SPAdes/assembler/ext/src/jemalloc/msvc/projects/*/*/Release*/
 SPAdes/assembler/ext/src/jemalloc/msvc/projects/*/*/Win32/
 SPAdes/assembler/ext/src/jemalloc/msvc/projects/*/*/x64/
 
-SPAdes/assembler/ext/src/jemalloc/**/build/
+SPAdes/assembler/ext/src/jemalloc/build/
 
 # From SPAdes/assembler/ext/src/samtools/.gitignore
-SPAdes/assembler/ext/src/samtools/**/*.o
-SPAdes/assembler/ext/src/samtools/**/.*.swp
-SPAdes/assembler/ext/src/samtools/**/*.a
-SPAdes/assembler/ext/src/samtools/**/*.dSYM
+SPAdes/assembler/ext/src/samtools/*.o
+SPAdes/assembler/ext/src/samtools/.*.swp
+SPAdes/assembler/ext/src/samtools/*.a
+SPAdes/assembler/ext/src/samtools/*.dSYM
 
 # From SPAdes/assembler/src/.gitignore
-SPAdes/assembler/src/**/abruijn/abruijn
-SPAdes/assembler/src/**/debruijn/debruijn
-SPAdes/assembler/src/**/hammer/main
-SPAdes/assembler/src/**/hammer/quake_count/quake_count
-SPAdes/assembler/src/**/hammer/quake_enhanced/count/count
-SPAdes/assembler/src/**/hammer/quake_enhanced/prepare_graph/prepare_graph
-SPAdes/assembler/src/**/bayes/bayes
-SPAdes/assembler/src/**/debruijn/k.hpp
+SPAdes/assembler/src/abruijn/abruijn
+SPAdes/assembler/src/debruijn/debruijn
+SPAdes/assembler/src/hammer/main
+SPAdes/assembler/src/hammer/quake_count/quake_count
+SPAdes/assembler/src/hammer/quake_enhanced/count/count
+SPAdes/assembler/src/hammer/quake_enhanced/prepare_graph/prepare_graph
+SPAdes/assembler/src/bayes/bayes
+SPAdes/assembler/src/debruijn/k.hpp
 
 # From SPAdes/assembler/src/common/modules/path_extend/.gitignore
-SPAdes/assembler/src/common/modules/path_extend/**/lc_params.info
-SPAdes/assembler/src/common/modules/path_extend/**/lc_config.info
+SPAdes/assembler/src/common/modules/path_extend/lc_params.info
+SPAdes/assembler/src/common/modules/path_extend/lc_config.info
 
 # From SPAdes/assembler/src/test/debruijn/graph_fragments/saves/.gitignore
-SPAdes/assembler/src/test/debruijn/graph_fragments/saves/**/test_save.*
+SPAdes/assembler/src/test/debruijn/graph_fragments/saves/test_save.*
 
 # From SPAdes/assembler/src/tools/de_quality/.gitignore
-SPAdes/assembler/src/tools/de_quality/**/*.class
-SPAdes/assembler/src/tools/de_quality/**/*plot*
-SPAdes/assembler/src/tools/de_quality/**/data/
-SPAdes/assembler/src/tools/de_quality/**/*.prd
-SPAdes/assembler/src/tools/de_quality/**/*.grp
-SPAdes/assembler/src/tools/de_quality/**/distance_estimation*
+SPAdes/assembler/src/tools/de_quality/*.class
+SPAdes/assembler/src/tools/de_quality/*plot*
+SPAdes/assembler/src/tools/de_quality/data/
+SPAdes/assembler/src/tools/de_quality/*.prd
+SPAdes/assembler/src/tools/de_quality/*.grp
+SPAdes/assembler/src/tools/de_quality/distance_estimation*
 
 # From SPAdes/assembler/src/tools/prolonger/.gitignore
-SPAdes/assembler/src/tools/prolonger/**/*.pyc
-SPAdes/assembler/src/tools/prolonger/**/.idea/*
+SPAdes/assembler/src/tools/prolonger/*.pyc
+SPAdes/assembler/src/tools/prolonger/.idea/*
 
 # From SPAdes/assembler/src/tools/quake-correct/.gitignore
-SPAdes/assembler/src/tools/quake-correct/**/*.cpp~
-SPAdes/assembler/src/tools/quake-correct/**/*.h~
-SPAdes/assembler/src/tools/quake-correct/**/.kdev4/*
-SPAdes/assembler/src/tools/quake-correct/**/quake-correct.kdev4
-SPAdes/assembler/src/tools/quake-correct/**/*.a
+SPAdes/assembler/src/tools/quake-correct/*.cpp~
+SPAdes/assembler/src/tools/quake-correct/*.h~
+SPAdes/assembler/src/tools/quake-correct/.kdev4/*
+SPAdes/assembler/src/tools/quake-correct/quake-correct.kdev4
+SPAdes/assembler/src/tools/quake-correct/*.a
 
 # From SPAdes/webvis/.gitignore
-SPAdes/webvis/**/venv
-SPAdes/webvis/**/flask_session
-SPAdes/webvis/**/webvis.cfg
+SPAdes/webvis/venv
+SPAdes/webvis/flask_session
+SPAdes/webvis/webvis.cfg
 
 # From SPAdes/webvis/sessions/.gitignore
-SPAdes/webvis/sessions/**/*
-!SPAdes/webvis/sessions/**/.gitignore
+SPAdes/webvis/sessions/*
+!SPAdes/webvis/sessions/.gitignore
 
 # From SPAdes/webvis/static/cache/.gitignore
-SPAdes/webvis/static/cache/**/*
-!SPAdes/webvis/static/cache/**/.gitignore
+SPAdes/webvis/static/cache/*
+!SPAdes/webvis/static/cache/.gitignore
