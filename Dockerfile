@@ -6,8 +6,7 @@ COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
 
 USER $MAMBA_USER
 # install conda env
-RUN sed -i 's/name: STRONG/name: base/g' /opt/STRONG/conda_env.yaml && \
-    micromamba install --yes --verbose --file /opt/STRONG/conda_env.yaml && \
+RUN micromamba install --yes -v --name base --file /opt/STRONG/conda_env.yaml && \
     micromamba clean --all --yes
 
 USER root
