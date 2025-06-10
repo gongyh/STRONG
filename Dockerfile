@@ -6,6 +6,9 @@ USER root
 RUN apt-get update && apt-get install -y --no-install-recommends \
       cmake \
       build-essential \
+      zlib1g-dev \
+      libssl-dev \
+      openssl \
     && rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log
 
 # copy source code
