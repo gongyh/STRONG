@@ -14,10 +14,10 @@ COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
 USER $MAMBA_USER
 
 # install SPAdes
-RUN /opt/STRONG/SPAdes/assembler && ./build_cog_tools.sh
+RUN cd /opt/STRONG/SPAdes/assembler && ./build_cog_tools.sh
 
 # install conda env
-RUN micromamba install --yes --file /opt/STRONG/conda_env.yaml && \
+RUN micromamba install --yes --name base --file /opt/STRONG/conda_env.yaml && \
     micromamba clean --all --yes
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
