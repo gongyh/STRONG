@@ -1,13 +1,17 @@
 FROM mambaorg/micromamba:2.2.0
 
-# copy source code
-COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG
+USER root
 
 # install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
       cmake \
       build-essential \
     && rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log
+
+# copy source code
+COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
+
+USER $MAMBA_USER
 
 # install SPAdes
 RUN /opt/STRONG/SPAdes/assembler && ./build_cog_tools.sh
