@@ -1,7 +1,6 @@
 .git/
 *.bk
 install.log
-Dockerfile
 
 # From BayesPaths/.gitignore
 BayesPaths/__pycache__
