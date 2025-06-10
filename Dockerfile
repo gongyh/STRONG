@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       zlib1g-dev \
       libssl-dev \
       openssl \
+      libbz2-dev \
     && rm -rf /var/lib/apt /var/lib/dpkg /var/lib/cache /var/lib/log
 
 # copy source code
