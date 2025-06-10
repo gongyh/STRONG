@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:2.1.1
+FROM mambaorg/micromamba:2.2.0
 
 USER root
 # copy source code
@@ -6,7 +6,7 @@ COPY --chown=$MAMBA_USER:$MAMBA_USER . /opt/STRONG/
 
 USER $MAMBA_USER
 # install conda env
-RUN micromamba install --yes -vvv --name base --file /opt/STRONG/conda_env.yaml && \
+RUN micromamba install --yes --name base --file /opt/STRONG/conda_env.yaml && \
     micromamba clean --all --yes
 
 USER root
