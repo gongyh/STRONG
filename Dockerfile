@@ -28,8 +28,8 @@ RUN cd /opt/STRONG/SPAdes/assembler && ./build_cog_tools.sh
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
 # install BayesPaths and DESMAN
-RUN cd /opt/STRONG/BayesPaths && python ./setup.py install && \
-    cd /opt/STRONG/DESMAN && python ./setup.py install
+RUN cd /opt/STRONG/BayesPaths && sed -i 's/sklearn/scikit-learn/g' setup.py && pip install . && \
+    cd /opt/STRONG/DESMAN && pip install .
 
 # fix
 RUN ln -fs $CONDA_PREFIX/lib/R/modules/lapack.so $CONDA_PREFIX/lib/R/modules/libRlapack.so && \
