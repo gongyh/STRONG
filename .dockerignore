@@ -1,6 +1,7 @@
 .git/
 *.bk
 install.log
+Dockerfile
 
 # From BayesPaths/.gitignore
 BayesPaths/__pycache__
@@ -60,19 +61,6 @@ SPAdes/assembler/bh_config.info
 SPAdes/assembler/bin
 SPAdes/assembler/build_spades
 SPAdes/assembler/share
-
-# From SPAdes/assembler/configs/.gitignore
-SPAdes/assembler/configs/debruijn/config.info
-SPAdes/assembler/configs/debruijn/simplification.info
-SPAdes/assembler/configs/debruijn/distance_estimation.info
-SPAdes/assembler/configs/debruijn/detail_info_printer.info
-SPAdes/assembler/configs/debruijn/log.properties
-SPAdes/assembler/configs/debruijn/path_extend/pe_config.info
-SPAdes/assembler/configs/debruijn/path_extend/pe_params.info
-SPAdes/assembler/configs/debruijn/path_extend/pe_libs.info
-SPAdes/assembler/configs/debruijn/construction.info
-SPAdes/assembler/configs/hammer/config.info
-SPAdes/assembler/configs/_generic/
 
 # From SPAdes/assembler/ext/include/samtools/.gitignore
 SPAdes/assembler/ext/include/samtools/*.o
