@@ -36,7 +36,9 @@ RUN ln -fs $CONDA_PREFIX/lib/R/modules/lapack.so $CONDA_PREFIX/lib/R/modules/lib
     PATH_concoctR=$(which concoct_refine) && \
     sed -i 's/values/to_numpy/g' $PATH_concoctR && \
     sed -i 's/as_matrix/to_numpy/g' $PATH_concoctR && \
-    sed -i 's/int(NK), args.seed, args.threads)/ int(NK), args.seed, args.threads, 500)/g' $PATH_concoctR
+    sed -i 's/int(NK), args.seed, args.threads)/ int(NK), args.seed, args.threads, 500)/g' $PATH_concoctR && \
+    sed -i 's/memG=400/mem_mb=204800/g' /opt/STRONG/SnakeNest/Results.snake && \
+    sed -i 's/memG=400/mem_mb=204800/g' /opt/STRONG/SnakeNest/ko_profiles.snake
 
 # test
 RUN python /opt/STRONG/SnakeNest/scripts/check_on_dependencies.py
